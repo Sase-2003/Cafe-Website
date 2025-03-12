@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Silver Spoon -Cafe</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free Website Template" name="keywords" />
+    <meta content="Free Website Template" name="description" />
+
+    <!-- Favicon -->
+    <link href="/img/favicon.png" rel="icon" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Libraries -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">Silver <span>Spoon</span></a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav ml-auto">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="feature.html" class="nav-item nav-link">Feature</a>
+            <a href="team.html" class="nav-item nav-link">Coffee</a>
+            <a href="menu.html" class="nav-item nav-link active">Menu</a>
+            <a href="order.html" class="nav-item nav-link">Order</a>
+            <a href="booking.html" class="nav-item nav-link">Booking</a>
+            <!-- <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                >Pages</a
+              >
+              <div class="dropdown-menu">
+                <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                <a href="single.html" class="dropdown-item">Blog Detail</a>
+              </div>
+            </div> -->
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Nav Bar End -->
+
+    <!-- Page Header Start -->
+    <div class="page-header mb-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Food Menu</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Menu Start -->
+    <div class="menu">
+      <div class="container">
+        <div class="section-header text-center">
+          <p>Food Menu</p>
+          <h2>Delicious Food Menu</h2>
+        </div>
+        <div class="menu-tab">
+          <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#burgers"
+                >Burgers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#snacks">Snacks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#beverages"
+                >Beverages</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#Pizzas">Pizzas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#sandwiches"
+                >sandwiches</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content">
+            <!-- burgers -->
+            <div id="burgers" class="container tab-pane active">
+              <div class="row">
+                <div class="col-lg-7 col-md-12">
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Bacon Burger', 9.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Bacon Burger.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3><span>Bacon Burger</span> <strong>$9.00</strong></h3>
+                      <p>Burger topped with crispy bacon and cheese.</p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Classic Cheeseburger', 11.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Classic Cheeseburger.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Classic Cheeseburger</span>
+                        <strong>$11.00</strong>
+                      </h3>
+                      <p>Juicy beef patty with cheese, lettuce, and tomato.</p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Veggie Burger', 13.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/veggie burger.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Veggie Burger</span>
+                        <strong>$13.00</strong>
+                      </h3>
+                      <p>Flavorful vegetarian patty with all the fixings.</p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Barbecue Burger', 18.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Barbecue Burger.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Barbecue Burger</span> <strong>$18.00</strong>
+                      </h3>
+                      <p>Burger with BBQ sauce and onion rings.</p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Chicken Burger', 22.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Chicken Burger.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Chicken Burger</span>
+                        <strong>$22.00</strong>
+                      </h3>
+                      <p>Grilled chicken breast with fresh veggies.</p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Spicy Jalapeno Burger', 22.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Spicy Jalapeno Burger.jpeg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Spicy Jalapeno Burger</span>
+                        <strong>$22.00</strong>
+                      </h3>
+                      <p>Burger with spicy jalapenos and pepper jack cheese.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                  <img src="img/menu-burger-img.jpg" alt="Image" />
+                </div>
+              </div>
+            </div>
+            <!-- snancks -->
+            <div id="snacks" class="container tab-pane fade">
+              <div class="row">
+                <div class="col-lg-7 col-md-12">
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Corn Tikki - Spicy fried Aloo', 15.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Corn Tikki.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Corn Tikki - Spicy fried Aloo</span>
+                        <strong>$15.00</strong>
+                      </h3>
+                      <p>
+                        Spicy fried patties made with corn, potatoes, and spices
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Bread besan Toast', 35.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Bread besan Toast.jpeg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Bread besan Toast</span> <strong>$35.00</strong>
+                      </h3>
+                      <p>
+                        Savory toast made with bread slices coated in a spiced
+                        chickpea flour (besan) batter and pan-fried until crisp.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Fruit Salad', 35.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Fruit Salad.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3><span>Fruit Salad</span> <strong>$35.00</strong></h3>
+                      <p>
+                        A fruit salad is a refreshing mix of various fresh
+                        fruits, offering a burst of colors and flavors.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Croissant', 20.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Croissant.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Croissant</span>
+                        <strong>$20.00</strong>
+                      </h3>
+                      <p>
+                        A flaky, buttery pastry that's perfect for any time of
+                        day.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Hummus and Veggies', 30.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Hummus and Veggies.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Hummus and Veggies</span>
+                        <strong>$30.00</strong>
+                      </h3>
+                      <p>Creamy hummus served with fresh vegetable sticks.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                  <img src="img/menu-snack-img.jpg" alt="Image" />
+                </div>
+              </div>
+            </div>
+            <!-- beverages -->
+            <div id="beverages" class="container tab-pane fade">
+              <div class="row">
+                <div class="col-lg-7 col-md-12">
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Strawberry Banana Smoothie', 7.00)"
+                  >
+                    <div class="menu-img">
+                      <img
+                        src="img/Strawberry Banana Smoothie.jpg"
+                        alt="Image"
+                      />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Strawberry Banana Smoothie</span>
+                        <strong>$7.00</strong>
+                      </h3>
+                      <p>
+                        A creamy blend of strawberries, bananas, and yogurt.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Mango Pineapple Smoothie', 9.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Mango Pineapple Smoothie.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Mango Pineapple Smoothie</span>
+                        <strong>$9.00</strong>
+                      </h3>
+                      <p>
+                        Tropical smoothie with mango, pineapple, and coconut
+                        milk.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Pomegranate Juice', 15.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Pomegranate Juice.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Pomegranate Juice</span> <strong>$15.00</strong>
+                      </h3>
+                      <p>
+                        Rich and antioxidant-packed juice with a tart flavor.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Mixed Berry Juice', 8.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Mixed Berry Juice.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Mixed Berry Juice</span>
+                        <strong>$8.00</strong>
+                      </h3>
+                      <p>
+                        A blend of various berries for a fruity and refreshing
+                        drink.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Mango Juice', 12.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Mango Juice.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Mango Juice</span>
+                        <strong>$12.00</strong>
+                      </h3>
+                      <p>
+                        Mango juice can be enjoyed on its own or mixed with
+                        other fruit juices for a refreshing beverage.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                  <img src="img/menu-beverage-img.jpg" alt="Image" />
+                </div>
+              </div>
+            </div>
+            <!-- sandwiches -->
+            <div id="sandwiches" class="container tab-pane fade">
+              <div class="row">
+                <div class="col-lg-7 col-md-12">
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Club Sandwich', 15.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Club Sandwich.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Club Sandwich</span>
+                        <strong>$15.00</strong>
+                      </h3>
+                      <p>Layers of turkey, bacon, lettuce, and tomato.</p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Grilled Cheese', 35.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Grilled Cheese.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Grilled Cheese</span> <strong>$35.00</strong>
+                      </h3>
+                      <p>
+                        A grilled cheese sandwich is often enjoyed on its own or
+                        paired with a bowl of tomato soup for the ultimate
+                        comfort meal.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Turkey and Avocado', 20.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Turkey and Avocado.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Turkey and Avocado</span>
+                        <strong>$20.00</strong>
+                      </h3>
+                      <p>Sliced turkey with creamy avocado.</p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Roast Beef Sandwich', 30.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Roast Beef Sandwich.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Roast Beef Sandwich</span>
+                        <strong>$30.00</strong>
+                      </h3>
+                      <p>Sliced roast beef with horseradish sauce.</p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('BLT (Bacon, Lettuce, Tomato)', 30.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/BLT.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>BLT (Bacon, Lettuce, Tomato)</span>
+                        <strong>$30.00</strong>
+                      </h3>
+                      <p>Classic sandwich with crispy bacon.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                  <img src="img/sandwich.jpg" alt="Image" />
+                </div>
+              </div>
+            </div>
+
+            <!-- pizza -->
+            <div id="Pizzas" class="container tab-pane fade">
+              <div class="row">
+                <div class="col-lg-7 col-md-12">
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Margherita', 15.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Margherita.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Margherita</span>
+                        <strong>$15.00</strong>
+                      </h3>
+                      <p>Classic pizza with tomato, mozzarella, and basil.</p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Pepperoni', 30.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Pepperoni.jpeg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3><span>Pepperoni</span> <strong>$35.00</strong></h3>
+                      <p>
+                        Savory pizza covered in spicy pepperoni slices and
+                        melted mozzarella cheese.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('BBQ Chicken', 30.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/BBQ Chicken.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>BBQ Chicken</span>
+                        <strong>$20.00</strong>
+                      </h3>
+                      <p>
+                        Delicious pizza with grilled chicken, BBQ sauce, red
+                        onions, and cilantro.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('Four Cheese', 30.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/Four Cheese.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>Four Cheese</span>
+                        <strong>$30.00</strong>
+                      </h3>
+                      <p>
+                        A rich blend of mozzarella, cheddar, parmesan, and blue
+                        cheese.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="menu-item"
+                    onclick="goToOrderPage('White Pizza', 30.00)"
+                  >
+                    <div class="menu-img">
+                      <img src="img/white.jpg" alt="Image" />
+                    </div>
+                    <div class="menu-text">
+                      <h3>
+                        <span>White Pizza</span>
+                        <strong>$30.00</strong>
+                      </h3>
+                      <p>
+                        Garlic-infused olive oil base with ricotta, mozzarella,
+                        and parmesan cheese.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                  <img src="img/pizza.jpg" alt="Image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Menu End -->
+
+    <!-- Footer Start -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="footer-contact">
+                  <h2>Our Address</h2>
+                  <p>
+                    <i class="fa fa-map-marker-alt"></i>123 Street, New York,
+                    USA
+                  </p>
+                  <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                  <p><i class="fa fa-envelope"></i>info@example.com</p>
+                  <div class="footer-social">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="footer-link">
+                  <h2>Quick Links</h2>
+                  <a href="index.html">Home</a>
+                  <a href="about.html"> About</a>
+                  <a href="menu.html">Menu</a>
+                  <a href="booking.html">Booking</a>
+                  <a href="contact.html">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="footer-newsletter">
+              <h2>About Us</h2>
+              <p>
+                Welcome to Silver Spoon Cafe, your cozy and inviting haven for a
+                delightful culinary experience. Whether you're a coffee
+                aficionado or simply looking for a perfect spot to relax, we
+                have something special for everyone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <p>
+            Copyright &copy; <a href="#">Silver Spoon</a>, All Right Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+    <script src="booking .js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
